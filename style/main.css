@@ -1,0 +1,138 @@
+main {
+  display: grid;
+  place-items: center;
+}
+
+.form-container {
+  background: radial-gradient(at 100% 120%, rgba(231, 27, 27, 0.3490196078), rgba(82, 163, 255, 0.3490196078));
+  width: 70vw;
+  min-height: 80vh;
+  margin: 10vh 0 5vh;
+  border: 0.5vh solid rgba(149, 32, 173, 0.055);
+  border-radius: 1vh;
+}
+
+.job-application-title {
+  margin: 5vh 6vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 46px;
+}
+
+#form-application {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+}
+
+#form-application input,
+#form-application select,
+#form-application textarea {
+  margin-bottom: 2vh;
+  border: 1vh solid rgba(38, 233, 70, 0.05);
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+#form-application label {
+  margin: 0.5vw 2vw 2vw 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 30px;
+}
+
+#firstname,
+#lastname,
+#email {
+  width: 70%;
+  padding: 1.5vh;
+}
+
+#report-list {
+  width: 76%;
+  padding: 1.5vh;
+}
+
+#firstname,
+#lastname,
+#email,
+#report-list {
+  grid-column: span 1;
+  margin: 0.5vw 2vw 2vw 3vw;
+}
+
+.message-area-element textarea::-moz-placeholder {
+  font-size: 1.5rem;
+}
+
+.message-area-element textarea::placeholder {
+  font-size: 1.5rem;
+}
+
+#message {
+  grid-column: span 2;
+  width: 180%;
+  padding: 10px;
+  min-height: 150px;
+  margin: 0.5vw 0 0 3vw;
+}
+
+#file-upload {
+  grid-column: 2/3;
+  justify-self: end;
+  width: auto;
+}
+
+.file-upload-element {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3vw;
+}
+.file-upload-element label {
+  font-size: 64px;
+  padding: 0;
+}
+.file-upload-element input {
+  margin-top: 5vh;
+  background-color: white;
+}
+
+.file-upload-element label {
+  position: absolute;
+  left: 14.5%;
+}
+
+.file-upload-element input {
+  position: relative;
+}
+
+.termsconditions {
+  padding-left: 5%;
+  font-size: small;
+  grid-column: span 2;
+  width: 180%;
+}
+.termsconditions input {
+  transform: scale(2);
+}
+
+button[type=submit] {
+  grid-column: span 2;
+  justify-self: center;
+  padding: 10px 20px;
+  background-color: rgba(255, 138, 4, 0.9176470588);
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3vh;
+  width: 50%;
+  font-family: Calibri, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 0.5vh solid rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}/*# sourceMappingURL=main.css.map */
